@@ -36,9 +36,9 @@ spring:
             enable: true
 
   datasource:
-    username: postgres
-    password: H8n2VS1GKhqbfhBb
-    url: jdbc:postgresql://db.nyucxbvpfnvvsxziezgv.supabase.co:5432/postgres?sslmode=require
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.postgresql.Driver
 
